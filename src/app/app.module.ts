@@ -18,6 +18,8 @@ import {HttpClientModule} from "@angular/common/http";
 import {BillService} from "../service/bill-service";
 import {StorageService} from "../service/storage-service";
 import {Dialogs} from "@ionic-native/dialogs";
+import {BillProvider} from "../providers/bill-provider";
+import {SqLiteProvider} from "../providers/sqlite-provider";
 
 
 
@@ -53,6 +55,8 @@ import {Dialogs} from "@ionic-native/dialogs";
   providers: [
     StatusBar,
     SQLite,
+    BillProvider,
+    SqLiteProvider,
     SplashScreen,
     DatePipe,
     BillService,
